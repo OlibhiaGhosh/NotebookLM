@@ -1,9 +1,8 @@
-// app/api/upload/route.ts
 import { NextRequest, NextResponse } from "next/server";
 import fs from "fs/promises";
 import path from "path";
 
-export const runtime = "nodejs"; // ensure Node runtime
+export const runtime = "nodejs";
 
 export async function POST(req: NextRequest) {
   try {
@@ -14,17 +13,17 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "No file uploaded" }, { status: 400 });
     }
 
-    // ensure uploads dir exists
+    
     const uploadDir = path.join(process.cwd(), "public", "uploads");
     await fs.mkdir(uploadDir, { recursive: true });
 
-    // create a unique filename
+    
     const bytes = await file.arrayBuffer();
     const buffer = Buffer.from(bytes);
     const filename = `${Date.now()}-${file.name}`;
     const filePath = path.join(uploadDir, filename);
 
-    // save file
+    
     await fs.writeFile(filePath, buffer);
 
     return NextResponse.json(
