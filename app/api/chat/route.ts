@@ -16,7 +16,7 @@ export async function POST(request: NextRequest){
     model: 'text-embedding-3-large',
   });
   let vectorStore;
-  if(mode === 'files'){
+  if(mode === 'file'){
     vectorStore = await QdrantVectorStore.fromExistingCollection(
       embeddings,
       {
