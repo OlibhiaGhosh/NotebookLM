@@ -1,6 +1,7 @@
 # NotebookLM
-![NotebookLM Demo video](./assests/oli.mp4)
+![NotebookLM](NotebookLM.png)
 
+Here's a demo video of the application: [Demo Video](https://youtu.be/-jfrHNcel-M) <br />
 This is a Next.js application that allows users to chat with a large language model (LLM) with context from various sources, including uploaded files, websites, text, and YouTube videos.
 
 ## Getting Started
