@@ -4,22 +4,6 @@
 Here's a demo video of the application: [Demo Video](https://youtu.be/-jfrHNcel-M) <br />
 This is a Next.js application that allows users to chat with a large language model (LLM) with context from various sources, including uploaded files, websites, text, and YouTube videos.
 
-## Getting Started
-
-First, install the dependencies:
-
-```bash
-npm install
-```
-
-Then, run the development server:
-
-```bash
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
 ## Features
 
 *   **Chat Interface:** A simple and intuitive chat interface to interact with the LLM.
@@ -49,30 +33,4 @@ The application has the following API routes:
 *   **Tailwind CSS:** A utility-first CSS framework for rapidly building custom user interfaces.
 *   **Shadcn/ui:** A collection of re-usable components that are built on top of Radix UI and Tailwind CSS.
 
-## Project Structure
-
-```
-.
-├── app
-│   ├── api
-│   │   ├── chat
-│   │   │   └── route.ts
-│   │   ├── indexing
-│   │   │   └── route.ts
-│   │   └── upload
-│   │       └── route.ts
-│   ├── globals.css
-│   ├── layout.tsx
-│   └── page.tsx
-├── components
-│   ├── ai-elements
-│   └── ui
-├── public
-│   └── uploads
-├── lib
-│   └── utils.ts
-├── next.config.mjs
-├── package.json
-├── tsconfig.json
-└── README.md
 ```
